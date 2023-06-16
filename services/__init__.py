@@ -1,10 +1,10 @@
 from flask import Flask, blueprints
 
 import config
-from models import db as _db
+from models import db as DB
 
-db = _db.db
-migrate = _db.migrate
+db = DB.DB
+migrate = DB.migrate
 
 from . import admin
 
