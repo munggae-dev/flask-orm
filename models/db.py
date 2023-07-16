@@ -15,8 +15,5 @@ class BaseModel(DB.Model):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
     
 if __name__ == "main":
-    pass
-
-a = BaseModel()
-
-a.to_dict()
+    a = BaseModel()
+    a.to_dict()
